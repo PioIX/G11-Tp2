@@ -1,0 +1,61 @@
+header{
+    background-color: peru;
+
+    display: flex;
+    justify-content: space-between;
+
+    height: fit-content;
+    padding: 10px;
+
+    nav{
+        padding-top: 1.5rem;
+    }
+}
+
+main{
+    background-color: aqua;
+}
+
+#portada{
+    background-image: url('/img/img-test.jpg');
+    height: 15rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    padding: 20px;
+}
+
+.info-img-boton{
+    display: block;
+    text-align: center;
+}
+
+.info-img{
+    height: 200px;
+    width: 350px;
+}
+
+.info-boton{
+    height: 30px;
+    background-color: brown;
+    padding: 10px;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 769px){
+    .info{
+        display: block;
+    }
+
+    .info-img-boton{
+        display: block;
+    }
+}
