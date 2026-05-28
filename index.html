@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon2.webp">
+
     <title>Inicio</title>
+    <!-- Font 1 texto normal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+
+    <!-- Font 2 titulols -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <a id="scroll" href="#portada"></a>
     <header>
-        <h2>Hola</h2>
+        <div style="display: flex; align-items: center;">
+            <img id="logo" src="img/logo.png">
+            <h2>Hola</h2>
+        </div>
         <nav>
-            <a href="productos.html">Productos</a> |
-            <a href="reseñas.html">Reseñas</a> |
-            <a href="contacto.html">Contacto</a> |
+            <a class="nav-boton" href="productos.html"><b>Productos</b></a>
+            <a class="nav-boton" href="reseñas.html"><b>Reseñas</b></a>
+            <a class="nav-boton" href="contacto.html"><b>Contacto</b></a>
         </nav>
     </header>
     <main>
@@ -30,8 +46,30 @@
                     <a class="info-boton" href="productos.html">Productos</a>
                 </div>
             </section>
-            <section></section>
-            <section></section>
+            <hr class="hr-screen">
+            <section class="info">
+                <div class="info-img-boton">
+                    <img class="info-img" src="img/img-test.jpg">
+                    <a class="info-boton" href="reseñas.html">Reseñas</a>
+                </div>
+                <div>
+                    <h2 style="text-align: right;">Titulol 2</h2>
+                    <hr>
+                    <p style="text-align: right;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut fermentum mauris. Integer porta commodo purus, ac pharetra odio dignissim at. Phasellus quis dui id justo pulvinar scelerisque. Duis nec magna sit amet lorem efficitur faucibus et ut massa. Duis hendrerit euismod sapien ut viverra. Suspendisse potenti. Nam non porta libero. Phasellus eu dictum augue. Ut mattis imperdiet viverra.</p>
+                </div>
+            </section>
+            <hr class="hr-screen">
+            <section class="info">
+                <div>
+                    <h2>Titulol 3</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut fermentum mauris. Integer porta commodo purus, ac pharetra odio dignissim at. Phasellus quis dui id justo pulvinar scelerisque. Duis nec magna sit amet lorem efficitur faucibus et ut massa. Duis hendrerit euismod sapien ut viverra. Suspendisse potenti. Nam non porta libero. Phasellus eu dictum augue. Ut mattis imperdiet viverra.</p>
+                </div>
+                <div class="info-img-boton">
+                    <img class="info-img" src="img/img-test.jpg">
+                    <a class="info-boton" href="contacto.html">Contacto</a>
+                </div>
+            </section>
         </section>
     </main>
     <footer>

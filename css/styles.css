@@ -1,33 +1,171 @@
+.yomogi-regular {
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cherry-bomb-one-regular {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html{
+    background-image: url(/img/fondo.webp);
+
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+hr{
+    border: #F653A6 3px dashed;
+    border-bottom: 0;
+
+}
+
+.hr-screen{
+    visibility: hidden;
+    width: 90%;
+}
+
 header{
-    background-color: peru;
+    background-color: #F653A6;
+    color: white;
 
     display: flex;
     justify-content: space-between;
 
     height: fit-content;
-    padding: 10px;
+    padding: 1.5rem;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    align-items: center;
+
+    #logo{
+        height: 100px;
+        margin-right: 25px;
+    }
+
+    h2{
+        font-size: 40px;
+        margin: 0;
+    }
 
     nav{
-        padding-top: 1.5rem;
+        font-family: "Yomogi", cursive;
     }
 }
 
+.nav-boton{
+    background-color: #FBABCF;
+    color: white;
+
+    padding: 15px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+
+    text-decoration:none;
+}
+
+.nav-boton:hover{
+    background-color: white;
+    color: #FBABCF;
+
+    transition: 0.4s;
+}
+
+h1{
+    font-family: "Cherry Bomb One", system-ui;
+    font-size: 50px;
+}
+
+h2{
+    font-family: "Yomogi", cursive;
+}
+
+#scroll{
+    background-image: url(/img/Icono.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+
+    height: 150px;
+    width: 150px;
+
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 main{
-    background-color: aqua;
+    background-color: #FBABCF;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #portada{
     background-image: url('/img/img-test.jpg');
-    height: 15rem;
+    height: 35rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:#F653A6;
+}
+
+#portada:hover{
+
+    background-image: 
+        linear-gradient(rgba(160, 0, 96, 0.2), rgba(160, 0, 96, 0.2)),
+        url('/img/img-test.jpg');
+    background-size: cover;
+    color: aliceblue;
+
+    transition: 0.4s;
+
+    /*filter: brightness(80%);
+    transition: 0.3s;
+    color: aliceblue;
+    h2{
+        z-index: 999;
+    }*/
 }
 
 .info{
     display: flex;
     padding: 20px;
+    gap: 5rem;
+    color: white;
+    p{
+        font-family: "Yomogi", cursive;
+        font-size: 20px;
+    }
+}
+
+.info:hover{
+    background-color: #F78CBD;
+    transition: 0.4s;
 }
 
 .info-img-boton{
@@ -36,26 +174,76 @@ main{
 }
 
 .info-img{
-    height: 200px;
+    height: 350px;
     width: 350px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
 }
 
 .info-boton{
-    height: 30px;
-    background-color: brown;
+    height: fit-content;
+    background-color: #F653A6;
     padding: 10px;
+    font-size: 20px;
+    font-family: "Yomogi", cursive;
+    width: fit-content;
+
+    color: white;
+    text-decoration:none;
+
+    border-radius: 10px;
+}
+
+.info-boton:hover{
+    background-color: white;
+    color: #F653A6;
+
+    transition: 0.4s;
 }
 
 footer{
-    background-color: blueviolet;
+    background-color: #F78CBD;
+    color: white;
+    padding: 15px;
+    height: fit-content;
+    margin-top: 10px;
+
+    border-radius: 20px;
+
+    font-family: "Yomogi", cursive;
+    text-align: center;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 950px){
+    body{
+        width: 90%;
+    }
+
+    .hr-screen{
+        visibility: visible;
+    }
+
     .info{
         display: block;
     }
 
     .info-img-boton{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+
+        align-items: center;
+        justify-content: space-evenly;
+
+        gap: 2rem;
     }
+
+    .info-img{
+        margin-bottom: 0;
+    }
+
+    .info-boton{
+        height: fit-content;
+    }
+
 }
