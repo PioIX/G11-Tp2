@@ -1,3 +1,8 @@
+::selection {
+  color: white;
+  background: purple;
+}
+
 .yomogi-regular {
   font-family: "Yomogi", cursive;
   font-weight: 400;
@@ -28,7 +33,7 @@ body{
 }
 
 hr{
-    border: #F653A6 3px dashed;
+    border: purple 3px dashed;
     border-bottom: 0;
 
 }
