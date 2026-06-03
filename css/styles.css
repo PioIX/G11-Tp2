@@ -220,6 +220,24 @@ footer{
     text-align: center;
 }
 
+/* ⋆˚࿔ Productos */
+.grid-container {
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr); 
+  
+  gap: 15px; 
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: plum;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
 @media screen and (max-width: 950px){
     body{
         width: 90%;
