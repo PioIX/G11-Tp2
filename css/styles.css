@@ -119,14 +119,14 @@ h2{
 }
 
 main{
-    background-color: #e2abfb;
+    background-color: #FBABCF;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 #portada{
-    background-image: url('/img/baner.jpg');
+    background-image: url('/img/img-test.jpg');
     height: 35rem;
 
     display: flex;
@@ -136,14 +136,14 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 
-    color:rgb(243, 175, 50);
+    color:#F653A6;
 }
 
 #portada:hover{
 
     background-image: 
         linear-gradient(rgba(160, 0, 96, 0.2), rgba(160, 0, 96, 0.2)),
-        url('/img/baner.jpg');
+        url('/img/img-test.jpg');
     background-size: cover;
     color: aliceblue;
 
@@ -236,17 +236,7 @@ footer{
   padding: 30px;
   text-align: center;
   font-size: 24px;
-  height: 400px;
-  width: 300px;
-  overflow: hidden;
 }
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crops while maintaining aspect ratio */
-    object-position: center; /* Center the crop */
-  }
 
 @media screen and (max-width: 950px){
     body{
