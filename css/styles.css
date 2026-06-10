@@ -33,6 +33,10 @@ hr{
 
 }
 
+p{
+    font-family: "Yomogi", cursive;
+}
+
 .hr-screen{
     visibility: hidden;
     width: 90%;
@@ -227,6 +231,81 @@ footer{
     text-align: center;
 }
 
+<<<<<<< Updated upstream
+=======
+/* ⋆˚࿔ Productos */
+.grid-container {
+  display: grid;
+  
+  grid-template-columns: repeat(3, 1fr); 
+  
+  gap: 15px; 
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: plum;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/*Contacto*/
+.contacto{
+    padding: 1.5rem;
+}
+
+label{
+    font-family: "Yomogi", cursive;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    border-radius: 10px;
+    background-color: plum;
+    height: 35px;
+    border: purple 1px solid;
+    margin-left: 5px;
+}
+
+textarea{
+    border-radius: 10px;
+    background-color: plum;
+    height: 50px;
+    width: 200px;
+    margin-left: 5px;
+
+    border: purple 1px solid;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+#boton-contacto{
+    background-color: purple;
+    color: white;
+    border: 0;
+
+    padding: 15px;
+    margin-right: 10px;
+    font-family: "Yomogi", cursive;
+    border-radius: 10px;
+    
+}
+
+#boton-contacto:hover{
+    background-color: white;
+    color: #FBABCF;
+
+    transition: 0.4s;
+}
+
+>>>>>>> Stashed changes
 @media screen and (max-width: 950px){
     body{
         width: 90%;
