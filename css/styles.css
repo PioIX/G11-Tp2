@@ -148,13 +148,6 @@ main{
     color: aliceblue;
 
     transition: 0.4s;
-
-    /*filter: brightness(80%);
-    transition: 0.3s;
-    color: aliceblue;
-    h2{
-        z-index: 999;
-    }*/
 }
 
 .info{
@@ -205,6 +198,25 @@ main{
     color: #F653A6;
 
     transition: 0.4s;
+}
+
+.reseñas{
+    padding: 15px;
+    color: white;
+}
+
+.comentario{
+    padding: 10px;
+    p{
+        font-family: "Yomogi", cursive;
+        font-size: 20px;
+    }
+}
+
+.comentario:hover{
+    background-color: #F78CBD;
+    transition: 0.4s;
+    border-radius: 20px;
 }
 
 footer{
